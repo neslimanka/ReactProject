@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Navi extends Component {
+export default class Product extends Component {
     render() {
         return (
             <div>
-                <h3>Navi.js</h3>
+                <h3>Product List</h3>
             </div>
         )
     }

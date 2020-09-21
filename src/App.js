@@ -1,21 +1,27 @@
-import React from 'react';
-import Navi from './Navi';
+import React, { Component } from 'react'
+import { Container, Row } from 'reactstrap'
+import CategoryList from './CategoryList'
+import Navi from './Navi'
+import Product from './Product'
+
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <Container>
+                   <Row>
+                   <CategoryList></CategoryList>
+                   </Row>
+                   <Row>
+                       <Navi></Navi>
+                   </Row>
+                   <Product></Product>
 
 
-
-
-function App() {
-  return (
-    <div>
-      <Navi></Navi>
-      <Navi></Navi>
-      <Navi></Navi>
-      <Navi></Navi>
-      
-      <h3>Deneme</h3>
-    </div>
-    
-  );
+                </Container>
+                
+                <h3>Hello from React!</h3>
+            </div>
+        )
+    }
 }
-
-export default App;
