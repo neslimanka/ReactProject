@@ -6,6 +6,10 @@ import Product from "./Product";
 
 export default class App extends Component {
   render() {
+
+     let productInfo={title: "ProductList",baskabisey:"baskabisey"}
+     let categoryInfo={title: "CategoryList"}
+     
     return (
       <div>
         <Container>
@@ -14,10 +18,10 @@ export default class App extends Component {
           </Row>
           <Row>
             <Col xs="3">
-              <CategoryList />
+              <CategoryList info={categoryInfo}/>
             </Col>
             <Col xs="9">
-              <Product />
+              <Product info={productInfo}/>
             </Col>
           </Row>
         </Container>
